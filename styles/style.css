@@ -1,0 +1,96 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+body .container {
+  width: 100%;
+  height: 100%;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+body .container .rocket {
+  left: 40%;
+  top: 30%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  z-index: 5;
+}
+
+body .container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+body .container section:nth-of-type(1) {
+  background-color: aliceblue;
+}
+
+body .container section:nth-of-type(2) {
+  background-color: #aaaaaa;
+}
+
+body .container section:nth-of-type(3) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#aaaaaa), to(#969696));
+  background: linear-gradient(#aaaaaa, #969696);
+}
+
+body .container section:nth-of-type(4) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#969696), to(#787878));
+  background: linear-gradient(#969696, #787878);
+}
+
+body .container section:nth-of-type(5) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#787878), to(#505050));
+  background: linear-gradient(#787878, #505050);
+}
+
+body .container section:nth-of-type(6) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#505050), to(#3c3c3c));
+  background: linear-gradient(#505050, #3c3c3c);
+}
+
+body .container section:nth-of-type(7) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#0a0a0a));
+  background: linear-gradient(#3c3c3c, #0a0a0a);
+}
+
+body .container section:nth-of-type(7) img {
+  z-index: 6;
+  width: 90vw;
+}
+
+body .container section:nth-of-type(8) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0a0a0a), to(#3c3c3c));
+  background: linear-gradient(#0a0a0a, #3c3c3c);
+}
+
+body .container section:nth-of-type(8) img {
+  z-index: 6;
+  width: 100vw;
+}
+
+body .container section:nth-of-type(9) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c), to(#505050));
+  background: linear-gradient(#3c3c3c, #505050);
+}
+
+body .container section:nth-of-type(10) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#505050), to(#787878));
+  background: linear-gradient(#505050, #787878);
+}
+/*# sourceMappingURL=style.css.map */
